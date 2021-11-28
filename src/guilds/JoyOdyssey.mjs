@@ -17,7 +17,7 @@ export function createMessage(bot) {
         "Channel purpose can be found in each channel's description.\n\n" +
 
         "**What is Joy Odyssey?**\n" +
-        "Joy Odyssey is a multi-dimensional experience created by me, Carlo "[Illangelo](https://en.wikipedia.org/wiki/Illangelo#Full_discography)" Montagnese.\n\n" +
+        "Joy Odyssey is a multi-dimensional experience created by me, Carlo \"[Illangelo](https://en.wikipedia.org/wiki/Illangelo#Full_discography)\" Montagnese.\n\n" +
 
         "In the past few months, I've been continuing to explore and embrace what the [metaverse](https://www.wired.com/story/what-is-the-metaverse/) is, and how to create cool projects within it.\n\n" +
 
