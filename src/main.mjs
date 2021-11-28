@@ -3,6 +3,7 @@ import process from "process";
 import Config from "./lib/Config.mjs";
 
 import { guildID as TMinusGuildID, createMessage as createMessageTMinus } from "./guilds/TMinus.mjs"
+import { guildID as JoyOdessyGuildID, createMessage as createMessageJoyOdessy } from "./guilds/JoyOdessy.mjs"
 
 const auth = new Config("auth")
 const config = new Config("config")
@@ -31,6 +32,17 @@ export const roles = {
     Management: { id: "849718240166543390", row: 1, emoji: { name: "👑" } },
     "A&R": { id: "849718396492841000", row: 1, emoji: { name: "💿" } },
   },
+  
+  [JoyOdessyGuildID]: {
+    Producer: { id: "913985103909236766", row: 0, emoji: { name: "👽" } },
+    Musician: { id: "913985785525567498", row: 0, emoji: { name: "🎻" } },
+    "Musical Artist": { id: "913985828454297661", row: 0, emoji: { name: "🦄" } },
+    "Visual Artist": { id: "913985889401704489", row: 0, emoji: { name: "👁️" } },
+    Writer: { id: "913985922201174056", row: 1, emoji: { name: "🩸" } },
+    DJ: { id: "913985940446388274", row: 1, emoji: { name: "🌐" } },
+    Management: { id: "913985967042490370", row: 1, emoji: { name: "🧩" } },
+    "A&R": { id: "913985994754244668", row: 1, emoji: { name: "⛓️" } },
+  },
 }
 
 function roleDataToID(data) {
@@ -51,6 +63,7 @@ async function main() {
 
   bot.once("ready", async () => {
     createMessageTMinus(bot);
+    createMessageJoyOdessy(bot);
   })
 
   bot.on("rawWS", (packet) => {
