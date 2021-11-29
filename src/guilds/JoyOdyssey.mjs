@@ -35,8 +35,7 @@ export function createMessage(bot) {
   })
 
   channel.createMessage({
-    "content": "**Announcement Channels**\n" +
-      "Check channel topic for the password!\n",
+    "content": "**Announcement Channels**\n",
     "components": [
       {
         "type": 1,
