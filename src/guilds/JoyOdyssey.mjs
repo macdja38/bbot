@@ -96,7 +96,7 @@ export function createMessage(bot) {
   });
 
   channel.createMessage({
-    "content": "­\n**Creater Roles?**",
+    "content": "­\n**Creator Roles**",
     "components": [{
       "type": 1,
       "components":
