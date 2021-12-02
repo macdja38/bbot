@@ -35,7 +35,7 @@ export function createMessage(bot) {
   })
 
   channel.createMessage({
-    "content": "**Announcement Channels**\n",
+    "content": "\n**Announcement Channels**\n",
     "components": [
       {
         "type": 1,
@@ -44,19 +44,19 @@ export function createMessage(bot) {
             type: 2,
             style: 5,
             label: "Announcments",
-            url: "https://discord.com/channels/913553478356455424/913553478549401636/",
+            url: "https://discord.com/channels/913553478356455424/915769396654379039/",
           },
           {
             type: 2,
             style: 5,
             label: "Socials",
-            url: "https://discord.com/channels/913553478356455424/913553478549401637/",
+            url: "https://discord.com/channels/913553478356455424/915769419878252594/",
           },
           {
             type: 2,
             style: 5,
-            label: "Metaverse",
-            url: "https://discord.com/channels/913553478356455424/913569242232795166/",
+            label: "News",
+            url: "https://discord.com/channels/913553478356455424/915769442749804594/",
           },
         ],
       }
@@ -82,7 +82,7 @@ export function createMessage(bot) {
           }, {
             type: 2,
             style: 5,
-            label: "Web3",
+            label: "Crypto",
             url: "https://discord.com/channels/913553478356455424/913553478729728002/",
           }, {
             type: 2,
